@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".choice">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="220dp"
+        android:layout_height="222dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="206dp"
+        android:layout_height="255dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/bg5" />
+
+    <LinearLayout
+        android:id="@+id/random_layout"
+        android:layout_width="118dp"
+        android:layout_height="270dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="97dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:src="@drawable/poemeye_choice2" />
+
+        <TextView
+            android:id="@+id/pc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隨機生成"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/pd1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:ems="1"
+                android:text="詩情多荷境"
+                android:textAlignment="center"
+                android:textColor="#5f5f5f"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pd2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:ems="1"
+                android:text="詞句花開唳"
+                android:textColor="#5f5f5f"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="118dp"
+        android:layout_height="270dp"
+        android:layout_alignStart="@+id/random_layout"
+        android:layout_alignTop="@+id/random_layout"
+        android:background="#00000000"
+        android:onClick="random_choice"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <LinearLayout
+        android:id="@+id/designation_layout"
+        android:layout_width="118dp"
+        android:layout_height="270dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="77dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="242dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:src="@drawable/poemeye_choice1n" />
+
+        <TextView
+            android:id="@+id/pc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成藏頭詩"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/pd3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="30dp"
+                android:ems="1"
+                android:text="藏首別有意"
+                android:textAlignment="center"
+                android:textColor="#5f5f5f"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pd4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:ems="1"
+                android:text="頭角竟生枝"
+                android:textColor="#5f5f5f"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="118dp"
+        android:layout_height="270dp"
+        android:layout_alignStart="@+id/designation_layout"
+        android:layout_alignTop="@+id/designation_layout"
+        android:background="#00000000"
+        android:onClick="designation_choice"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+</RelativeLayout>
